@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+#canvas-container{
+    position: relative;
+    display: inline-block;
+    
+}
+
+#Health-and-timmer-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#timmer{
+    min-width: 100px;
+    min-height: 100px;
+    flex-shrink: 0;
+    background-color: #a32727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+#player1-health-bar-conatiner{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;  
+
+}
+
+
+#player1-health-bar-background{
+   position: absolute;
+   background-color: red;
+   width: 100%;
+   top: 0;
+   right: 0 ;
+   left: 0;
+   bottom: 0;
+   z-index: 1;
+    
+}
+
+#player1-health-bar{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    background-color: yellow;
+    z-index: 2;
+
+}
+
+#player2-health-bar-conatiner{
+    position: relative;
+    height: 30px;
+    width: 100%;
+   
+
+}
+
+
+
+#player2-health-bar-background{
+    position: absolute;
+    background-color: red;
+    top: 0;
+    right: 0 ;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+}
+
+#player2-health-bar{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    background-color: yellow;
+    z-index: 2;
+    
+
+}
+
+#result-container{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
